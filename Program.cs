@@ -67,7 +67,7 @@ if(end > 1){
         if(i % 2 == 0){
             Console.Write($"{i}");
             if(i != end && i != end - 1){
-            Console.Write(", ");
+                Console.Write(", ");
             }
             i++;}
         else{

@@ -48,8 +48,36 @@ Console.WriteLine("Введите число");
 int Number = int.Parse(Console.ReadLine()!);
 if(Number % 2 == 0 && Number != 0) // 0 не является четным
 {
-    Console.WriteLine("да");
+    Console.WriteLine("да, это четное число");
 }
 else{
-    Console.WriteLine("нет");
+    Console.WriteLine("нет, введенное число не является четным");
 }
+
+/*Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+
+5 -> 2, 4
+8 -> 2, 4, 6, 8*/
+
+Console.WriteLine("Введите натуральное число больше 1");
+int end = int.Parse(Console.ReadLine()!);
+int i = 1;
+if(end > 1){
+    while(i <= end){
+        if(i % 2 == 0){
+            Console.Write($"{i}");
+            if(i != end && i != end - 1){
+            Console.Write(", ");
+            }
+            i++;}
+        else{
+            i++;
+    }
+}
+}
+else{
+    Console.WriteLine("Вы ввели некорректное число");
+}
+
+
+
